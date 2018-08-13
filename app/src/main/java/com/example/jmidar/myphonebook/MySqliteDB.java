@@ -71,6 +71,8 @@ public class MySqliteDB extends SQLiteOpenHelper{
     //for update data
     public boolean updateData(String id,String name,String cell){
 
+        String getId = ""+id;
+
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COLUMN1, id);
